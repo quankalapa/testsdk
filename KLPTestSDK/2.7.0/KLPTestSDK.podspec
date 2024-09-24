@@ -11,9 +11,8 @@ Pod::Spec.new do |s|
                            by providing a Swift wrapper to the API and a collection of UI screens and elements to capture
                            photos of documents and faces for further facial recognition.
                          DESC
-    s.license = { :type => 'MIT' }
     s.source            = { :http => "https://raw.githubusercontent.com/quankalapa/testsdk/master/#{s.version}/KalapaSDK.xcframework.zip" }
-    s.vendored_frameworks = 'KalapaSDK.xcframework'
+    s.ios.vendored_frameworks = 'KalapaSDK.xcframework'
 
     s.ios.deployment_target = '13.0'
 
